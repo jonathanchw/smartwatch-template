@@ -99,44 +99,8 @@
                       <th scope="col">-</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <img
-                          src="https://dhirenkashyap.com/projects/cart/v1/smartwatch/upload/products/1677068506_media_productmg2.png"
-                          class="img-fluid product-img"
-                          alt="Earbuds Case"
-                        />
-                      </td>
-                      <td>
-                        <a
-                          href="https://dhirenkashyap.com/projects/cart/v1/smartwatch/product-details/7"
-                          class="product-title"
-                          target="_blank"
-                          >Earbuds Case</a
-                        >
-                      </td>
-                      <td>$17.95</td>
-                      <td>
-                        <input
-                          type="number"
-                          value="1"
-                          min="1"
-                          class="form-control product-qty"
-                          disabled
-                        />
-                      </td>
-                      <td>$17.95</td>
-                      <td>
-                        <a
-                          href="#"
-                          class="product-remove-btn deleteCartBtn"
-                          data-rowid="8f14e45fceea167a5a36dedd4bea2543"
-                          ><i class="bi bi-x-square"></i
-                        ></a>
-                      </td>
-                    </tr>
-                  </tbody>
+                  <tbody id="cart-table"></tbody>
+                  <tfoot></tfoot>
                 </table>
               </div>
               <div class="row">
@@ -145,31 +109,27 @@
                   <div class="cart-summary">
                     <h3 class="cart-summary-title">Cart Summary</h3>
                     <ul>
-                      <li class="checkout_info_box">
-                        <span class="check_pro_name">Earbuds Case</span>
-                        <span class="check_pro_count"
-                          >&nbsp;&nbsp;&nbsp;x 1</span
-                        >
-                        <span class="check_pro_price">$17.95</span>
-                      </li>
+                      <div id="cart-SumaryTable"></div>
                       <li class="checkout_box_subtotal">
-                        <strong>SUBTOTAL</strong> <span>$17.95</span>
+                        <strong>SUBTOTAL</strong>
+                        <span id="cartDetails-subtotal">0.00</span>
                       </li>
                       <li class="checkout_box_shipping">
                         <strong>SHIPPING</strong> <span>USPS</span>
                       </li>
                       <li class="checkout_box_total">
-                        <strong>TOTAL</strong> $17.95
+                        <strong>TOTAL</strong>
+                        <span id="cartDetails-total">0.00</span>
                       </li>
                     </ul>
-                    <form action="" method="">
+                    <a href="checkout.html">
                       <button
                         type="submit"
                         class="btn btn-primary cart_tocheckout_submit"
                       >
                         Order Now
                       </button>
-                    </form>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -188,10 +148,7 @@
               <a href="privacy-policy.html">Privacy Policy</a> |
               <a href="contact.html"> Contact Us</a>
             </p>
-            <p>
-              Rhinebeck Marketing Inc 2150 S. 1300 E. Ste. 500, Salt Lake City,
-              Utah 84106, United States of America
-            </p>
+            <p>12913 Harbor Blvd Ste Q3 #433, Garden Grove, CA 92840, USA</p>
           </div>
         </div>
       </div>
@@ -212,5 +169,8 @@
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="js/script-custom.js"></script>
+    <script type="text/javascript" src="js/ProductData.js"></script>
+    <script type="text/javascript" src="js/Cart.js"></script>
+    <script type="text/javascript" src="js/checkout.js"></script>
   </body>
 </html>

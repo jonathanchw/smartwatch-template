@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Product Details</title>
-    <meta name="keywords" content="Product Details" />
-    <meta name="description" content="Product Details" />
+    <title>Thank You</title>
+    <meta name="keywords" content="Home" />
+    <meta name="description" content="Home" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
@@ -24,7 +24,9 @@
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/style-custom.css" rel="stylesheet" />
   </head>
-  <body class="inner-page">
+
+  <body>
+    <!--header-->
     <section id="header">
       <div class="container">
         <div class="col-lg-12">
@@ -57,8 +59,8 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a href="cart.html" class="nav-link">
-                    <span>Cart</span>
+                  <a href="index.html" class="nav-link">
+                    <span>Thank you</span>
                   </a>
                 </li>
               </ul>
@@ -73,10 +75,8 @@
           <div class="top_heade">
             <div class="box_top">
               <p>
-                <strong><a href="index.html" class="text-dark">Home</a></strong>
-                /
-                <a href="shop.html" class="text-dark">Products</a>
-                / Smartwatch Case
+                <strong><a href="index.html">Home</a></strong>
+                / Thank You
               </p>
             </div>
           </div>
@@ -84,75 +84,37 @@
       </div>
     </section>
 
-    <section class="single-product">
+    <section id="medal_detail">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="single-product-box">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="single-product-thumbnail">
-                    <img
-                      src="images/products/product3.png"
-                      class="img-fluid"
-                      alt="Smartwatch Case"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div class="single-product-body">
-                    <div class="row">
-                      <div class="col-md-8">
-                        <h3 class="product-heading">Smartwatch Case</h3>
-                        <h5 class="product-price">Price: $17.95</h5>
-                      </div>
-                      <div class="col-md-4 text-end">
-                        <div class="cartActionCheck"></div>
-                        <div class="cartActionBox" id="cartAction7">
-                          <a onclick="addToCart(3)"
-                            href="cart.html"
-                            class="btn btn-primary addtocart_btn viewcartbtn"
-                            >View Cart</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <hr />
-                    <div class="single-product-description">
-                      <ul>
-                        <li>
-                          This watch storage case fits any kind of men's or
-                          women's watch, luxury watch,smart watch.
-                        </li>
-                        <li>
-                          The frame is convex and surrounds the surrounding area
-                          to protect accidental contact with the LCD screen, and
-                          the flexible TPU material body reduces impact
-                        </li>
-                        <li>Digital crown guard with TPU side control</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="col-6 mx-auto">
+            <img src="images/thankyou.png" class="img-responsive" />
+
+            <h2>Thank you for ordering.</h2>
+            <p>Your order id is [[order_id]].</p>
           </div>
         </div>
       </div>
     </section>
+
     <section id="footer">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <p>
               <a href="terms-conditions.html">Terms & Conditions</a> |
-              <a href="privacy-policy.html">Privacy Policy</a> |
-              <a href="contact.html"> Contact Us</a>
+              <a
+                href="https://dhirenkashyap.com/projects/cart/v1/earbuds/privacy-policy"
+                >Privacy Policy</a
+              >
+              |
+              <a
+                href="https://dhirenkashyap.com/projects/cart/v1/earbuds/contact-us"
+              >
+                Contact Us</a
+              >
             </p>
-            <p>
-              12913 Harbor Blvd Ste Q3 #433, Garden Grove, CA 92840,
-                        USA
-            </p>
+            <p>205 E Waterside Cove Apt 32 Midvale, UT 84047, USA</p>
           </div>
         </div>
       </div>
@@ -162,18 +124,13 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <p>©2023 Smartwatch</p>
+            <p>©2023 Earbuds</p>
           </div>
         </div>
       </div>
     </section>
-
     <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="js/script-custom.js"></script>
-    <script type="text/javascript" src="js/ProductData.js"></script>
-    <script type="text/javascript" src="js/Cart.js"></script>
   </body>
 </html>

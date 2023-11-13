@@ -5,7 +5,7 @@ $(document).ready(function() {
     var dt = new Date();
     var cyr = dt.getFullYear();
     var mth = dt.getMonth()+1; 
-    var month = $("#month").val();
+    var month = $("#expiryMonth").val();
 
     return month >=mth;
 
@@ -16,24 +16,24 @@ $(document).ready(function() {
     var cyr = dt.getFullYear();
     var mth = dt.getMonth()+1; 
 
-    var creditcardexpyear = $("#creditcardexpyear").val();
+    var creditcardexpyear = $("#expiryYear").val();
     return creditcardexpyear >= cyr;
 
   }, "Invalid Card Expiration.");
-
+  
   $("#orderForm").validate({
     rules: {
-      fname: "required",
-      lname: "required",
+      firstName: "required",
+      lastName: "required",
       email: {
         required: true,
         email: true
       },
-      phone: {
+      /*phone: {
         required: true,
         number: true,
         minlength:10,
-      },
+      },*/
 
       state: {
         required: true,
@@ -44,7 +44,7 @@ $(document).ready(function() {
       address: {
         required: true,
       },
-      zip: {
+      zipCode: {
         required: true,
       },
       country: {
@@ -56,7 +56,7 @@ $(document).ready(function() {
       city1: {
         required: true,
       },
-      address1: {
+      address2: {
         required: true,
       },
       zip1: {
@@ -68,21 +68,21 @@ $(document).ready(function() {
       cardtype: {
         required: true,
       },
-      cnumber: {
+      cardNumber: {
         required: true,
-        number: true,
+        //number: true,
         minlength:15,
-        maxlength:16,
+        maxlength:20,
       },
-      creditcardexpyear: { 
+      expiryYear: { 
         required: true,
         year_check :true,
       },
-      month: 
+      expiryMonth: 
       {
         required: true,
       },
-      cvv: {
+      CVV: {
         required: true,
         number: true,
         minlength:3,
@@ -113,7 +113,7 @@ $(document).ready(function() {
       address: {
         required: "Please enter your address",
       },
-      zip: {
+      zipCode: {
         required: "Please enter Post code",
       },
       country: {
@@ -125,7 +125,7 @@ $(document).ready(function() {
       city1: {
         required: "Please enter your city",
       },
-      address1: {
+      2: {
         required: "Please enter your address",
       },
       zip1: {
@@ -137,17 +137,17 @@ $(document).ready(function() {
       cardtype: {
         required: "Please select card type",
       },
-      cnumber: {
+      cardNumber: {
         required: "Please enter card number",
         number: "Please enter card number in valid format with in 15 to 16 digits.",
       },
-      creditcardexpyear: {
+      expiryYear: {
         required: "Please select card expire year",
       },
-      month: {
+      expiryMonth: {
         required: "Please select card expire month",
       },
-      cvv: {
+      CVV: {
         required: "Please enter card cvv number",
         number: "Please enter card cvv number in valid format with in 3 to 4 digits.",
       },
@@ -162,7 +162,7 @@ $(document).ready(function() {
 
 
 // Add to Card 
-$(document).on('click', ".addToCartbtn", function(e){
+/*$(document).on('click', ".addToCartbtn", function(e){
 
   var buttObj = $(this);
   var productId = $(this).attr('data_pid');
@@ -221,7 +221,7 @@ $(document).on('click', ".deleteCartBtn", function(e){
 
 function show_message(message){
   $(".get_successmessage_data").html(message);
-}*/
+}
 
 /*$('#coupon_code_from').on('submit',function(e){
   e.preventDefault();

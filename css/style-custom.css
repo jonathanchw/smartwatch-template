@@ -53,7 +53,7 @@
 .total_box ul{background: #a8a8a8;border-radius: 4px;color: #ffffff;}
 .content-box{margin-top: 15px;}
 .content-box p{font-size: 14px;}
-.error {color: #ce0707;font-size: 14px;font-weight: 500;}
+.error {color: #ce0707;font-size: 14px;font-weight: 500; border:0.0625rem solid red}
 
 .inner-banner .top_heade{text-align: left;}
 .inner-banner .top_heade p{color: #ffffff;}
